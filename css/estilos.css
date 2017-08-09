@@ -1,0 +1,163 @@
+h1{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+header{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    0%   {margin-top: 150%;}
+    60%  {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
+
+.menu h1 a:visited{
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.contenido{
+  align-items: center;
+  width: 900px;
+  background-color: #02010a;
+}
+
+.bloque1 {
+  color: #FF0000;
+  background-color: #82c3a6;
+  order: 1;
+}
+
+.bloque2trans {
+  color:#82c3a6 ;
+  order: 2;
+}
+
+.bloque2trans:hover {
+  transform: translate(20px,5px);
+  border: 2px
+}
+
+.bloque2rota {
+  border: 1px;
+  color: #d5c75f ;
+  background-color: #d5c75f;
+  order: 2;
+}
+
+.bloque2rota :hover{
+  transform: rotate(10deg);
+  border: 2px;
+}
+
+.bloque3 {
+  border: 1px;
+  background-color: #d5c75f;
+  order: 3;
+}
+
+.contenedor{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  background-color: #d5c75f;
+}
+
+.footer{
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #C6d5c5;
+}
+
+.title{
+  text-align: left;
+}
+
+.links{
+  text-align: right;
+}
+
+.img1{
+    width: 650px;
+    height: 450px;
+}
+
+.img2{
+    width: 350px;
+    height: 250px;
+}
+
+.footeritem{
+  height: 100%;
+  margin-left: 40px;
+  text-align: initial;
+}
+
+@media only screen and (max-width:850px){
+  /*para telefono*/
+  .contenido{
+      align-items: center;
+      width: 100%;
+      background-color: #02010a;
+  }
+
+  .title{
+      text-align: center;
+  }
+
+  .links{
+    text-align: center;
+  }
+
+  .img1{
+    max-width: 350px;
+    max-height: 250px;
+  }
+
+  .img2{
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .bloque2{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .footeritem{
+    width: 100%;
+  }
+}
